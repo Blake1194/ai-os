@@ -24,3 +24,9 @@
 - The assistant will be developed through staged MVP-first progress.
 - The first implementation should optimize for usefulness, controllability, and low complexity rather than maximum ambition.
 - The recommended first implementation direction is a CLI-first assistant that reads and writes Atlas repo state before voice or service layers are added.
+
+## Implementation Readiness Decisions
+- The first implementation layer should live under `/implementation/local-assistant-cli/`.
+- The MVP should use explicit interface/contracts before broader runtime complexity is added.
+- The repo remains the durable state layer for notes, tasks, logs, checkpoints, small code, and small fixtures.
+- Large media, bulky exports, and future runtime caches should stay out of the normal repo path.
