@@ -33,3 +33,7 @@ The system can now:
 ## Local Assistant Blueprint Effort
 - Atlas OS now has an active local assistant blueprint effort.
 - This unlocks a clear path from workflow system design into a future branded assistant layer with versioned milestones.
+
+## Recovery / Resume Support
+- Atlas OS now has an explicit recovery checkpoint system in `/checkpoints/`.
+- This makes it easier to resume safely after context loss, browser interruption, or assistant handoff.
