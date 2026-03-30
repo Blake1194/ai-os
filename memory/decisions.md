@@ -15,3 +15,7 @@
 
 ## Template Decisions
 - Future repeatable work in Atlas OS should use templates whenever possible instead of ad hoc structure.
+
+## Local Assistant Decisions
+- The local assistant effort will be developed as a project with versioned milestones.
+- Early versions should prioritize usefulness and integration over perfection.
