@@ -9,10 +9,19 @@ ai-os is the central repository for **Atlas OS**, a personal Atlas-style AI oper
 - make the system durable, editable, and expandable over time
 
 ## Core Roles
-- **Command Center:** ChatGPT interprets goals and routes work
+- **Command Center:** ChatGPT interprets goals, plans work, and routes tasks
 - **Operator:** Do Browser executes browser tasks safely
 - **Memory:** GitHub stores checkpoints, commands, logs, and decisions
 - **Execution Layer:** workflows turn repeated tasks into repeatable operations
+
+## Workflow Layer
+The repository now includes an operating workflow layer that defines how Atlas handles:
+- intake of new requests and materials
+- routing and planning decisions
+- safe task execution
+- session review and closeout
+
+Core workflow files live in `/workflows/` and define routing, execution, intake, and review behavior.
 
 ## Long-Term Vision
 Atlas OS should become a personal AI operating environment that can:
