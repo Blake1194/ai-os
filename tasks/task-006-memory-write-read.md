@@ -73,5 +73,19 @@ Approval is still required later for:
 ## Relation to MVP Spec
 This task operationalizes the MVP promise that the assistant can read minimal context and write durable outputs into the correct repo structure.
 
+## Step-by-Step Execution Instructions
+1. define the smallest allowed read set for context
+2. define the approved write targets for note, task, and log actions
+3. define formatting rules for structured writes
+4. define how disallowed targets are refused safely
+5. define what metadata about file changes must be returned
+6. create small example read/write scenarios
+7. confirm all writes remain inside approved repo paths
+
+## Execution Notes
+- keep the read set narrow to avoid over-reading the repo
+- keep write targets explicit and auditable
+- this layer should expose changed-file information for reporting
+
 ## Next Best Action
 Begin `task-007-logging-and-reporting.md` after memory read/write behavior is fixed.
