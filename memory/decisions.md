@@ -19,3 +19,8 @@
 ## Local Assistant Decisions
 - The local assistant effort will be developed as a project with versioned milestones.
 - Early versions should prioritize usefulness and integration over perfection.
+
+## Local Assistant MVP Decisions
+- The assistant will be developed through staged MVP-first progress.
+- The first implementation should optimize for usefulness, controllability, and low complexity rather than maximum ambition.
+- The recommended first implementation direction is a CLI-first assistant that reads and writes Atlas repo state before voice or service layers are added.
