@@ -21,25 +21,27 @@ The repo now contains:
 - first build runbook
 - execution checklist
 - request-intake examples
+- the first actual implementation piece defined under the implementation layer
+- request-intake fixtures for safe first-pass testing
 
 ## What Remains
 Implementation execution has not started yet.
 What remains is the first real build pass:
-- begin the first actual implementation step
-- create the first code-facing module under `/implementation/local-assistant-cli/src/`
-- start the intake, routing, repo-write, and reporting behavior in real implementation form
+- create the first code-facing request-intake implementation file under `/implementation/local-assistant-cli/src/`
+- keep it limited to normalization and safe invalid-input handling
+- start the intake behavior in real implementation form before moving to routing, writes, or reporting
 
 ## First Implementation Action
-Create the first request-intake module under `/implementation/local-assistant-cli/src/`.
+Create the first request-intake implementation file under `/implementation/local-assistant-cli/src/`.
 Its responsibility is to accept a raw request, normalize it into the MVP request shape, and safely reject empty or unsupported input.
 
 ## Current Recommended Sequence
 1. complete `task-004-cli-intake-layer.md`
-2. complete `task-005-cli-routing-layer.md`
-3. complete `task-006-memory-write-read.md`
-4. complete `task-007-logging-and-reporting.md`
-5. follow `implementation/first-build-runbook.md`
-6. begin the first actual implementation step defined in `implementation/first-build-step.md`
+2. create the first concrete request-intake implementation file
+3. complete `task-005-cli-routing-layer.md`
+4. complete `task-006-memory-write-read.md`
+5. complete `task-007-logging-and-reporting.md`
+6. follow `implementation/first-build-runbook.md`
 
 ## Current Safe State
 The project is still inside safe repo-only planning/readiness work.
@@ -53,11 +55,11 @@ It has not yet crossed into:
 If resuming later:
 1. read `README.md`
 2. read this checkpoint
-3. read `implementation/local-assistant-build-order.md`
-4. read `implementation/first-build-step.md`
-5. read `implementation/first-build-runbook.md`
-6. read `implementation/execution-checklist.md`
-7. begin the first actual implementation step when approved
+3. read `implementation/first-build-step.md`
+4. read `implementation/first-build-runbook.md`
+5. read `implementation/local-assistant-cli/src/request-intake/README.md`
+6. read `implementation/local-assistant-cli/tests/fixtures/request-intake-fixtures.md`
+7. begin the first actual implementation file when approved
 
 ## Readiness Update
 - build tasks `004` to `007` now exist
@@ -65,7 +67,8 @@ If resuming later:
 - first build step now exists
 - first build runbook now exists
 - execution checklist now exists
-- the system is ready for the first actual implementation action once approved
+- the first actual implementation piece is now defined
+- the system is ready for the first actual implementation file once approved
 
 ## Ready State Declaration
 Atlas OS is now **ready to begin implementation planning/build execution** for the CLI-first local assistant MVP with minimal ambiguity.

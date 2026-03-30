@@ -21,10 +21,10 @@ A staged assistant system with versioned milestones, clear scope, reusable archi
 This project gives Atlas OS a clear path toward a real personal assistant layer instead of remaining only a repository and workflow framework.
 
 ## Current Status
-Active — implementation-ready planning completed for the first CLI-first MVP pass.
+Active — the first actual implementation piece is now defined under the implementation layer.
 
 ## Current Phase
-Implementation-ready MVP build planning complete
+Implementation start package complete; first module definition created
 
 ## Core Tools Involved
 - ChatGPT
@@ -54,12 +54,16 @@ Implementation-ready MVP build planning complete
 - `projects/local-assistant-storage-architecture.md`
 - `implementation/local-assistant-build-order.md`
 - `implementation/first-build-step.md`
+- `implementation/first-build-runbook.md`
+- `implementation/execution-checklist.md`
 
 ## Implementation Layer
 - `implementation/local-assistant-cli/README.md`
 - `implementation/local-assistant-cli/src/README.md`
+- `implementation/local-assistant-cli/src/request-intake/README.md`
 - `implementation/local-assistant-cli/tests/README.md`
 - `implementation/local-assistant-cli/tests/fixtures/README.md`
+- `implementation/local-assistant-cli/tests/fixtures/request-intake-fixtures.md`
 - `implementation/local-assistant-cli/docs/README.md`
 
 ## Linked Workflows
@@ -87,9 +91,10 @@ Implementation-ready MVP build planning complete
 4. define build breakdown, contracts, validation, and storage rules
 5. prepare the implementation layer structure
 6. create the implementation-preparation task set for intake, routing, memory, and reporting
-7. begin the first actual implementation step
-8. test assistant-oriented task routing in live use
-9. add more local-first components later
+7. define the first actual implementation piece under the implementation layer
+8. begin the first actual implementation file
+9. test assistant-oriented task routing in live use
+10. add more local-first components later
 
 ## Current Milestone Status
 - blueprint and project scope: complete
@@ -98,7 +103,8 @@ Implementation-ready MVP build planning complete
 - build breakdown/contracts/validation/storage: complete
 - implementation layer structure: complete
 - implementation-preparation task set created: complete
-- first actual implementation step: next
+- first actual implementation piece defined: complete
+- first actual implementation file: next
 
 ## Success Criteria
 - the assistant effort is tracked as a project
@@ -114,7 +120,7 @@ Implementation-ready MVP build planning complete
 - how much memory should remain repo-based vs local-state-based in later versions
 
 ## Explicit Next Milestone
-Begin the first actual implementation step described in `implementation/first-build-step.md`.
+Create the first actual request-intake implementation file under `/implementation/local-assistant-cli/src/`.
 
 ## Next Best Action
-Start the first actual implementation step for the request-intake module.
+Start the first concrete implementation file for the request-intake module when approved.
