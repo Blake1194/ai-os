@@ -8,3 +8,7 @@
 - The system will favor workflow definitions before full automation code.
 - The system will stop before irreversible actions by default.
 - Local assistant features will be added in later stages, not before the core system works.
+
+## Daily Operating Decisions
+- Atlas OS will use a daily operating loop as the primary human-to-system interaction pattern.
+- Reusable operating behavior should be captured as command templates and workflows.
