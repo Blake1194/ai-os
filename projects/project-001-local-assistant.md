@@ -14,16 +14,17 @@ A staged assistant system with versioned milestones, clear scope, reusable archi
 - define versioned build path
 - define technical direction and system boundaries
 - define the smallest useful MVP
+- prepare the first implementation phase
 - break work into linked tasks over time
 
 ## Why It Matters
 This project gives Atlas OS a clear path toward a real personal assistant layer instead of remaining only a repository and workflow framework.
 
 ## Current Status
-Active — blueprint created and MVP specification defined.
+Active — implementation-ready planning completed for the first CLI-first MVP pass.
 
 ## Current Phase
-MVP specification
+Implementation-ready MVP build planning complete
 
 ## Core Tools Involved
 - ChatGPT
@@ -34,11 +35,26 @@ MVP specification
 ## Linked Tasks
 - `tasks/task-002-local-assistant-blueprint.md`
 - `tasks/task-003-local-assistant-mvp-spec.md`
+- `tasks/task-004-cli-first-assistant-foundation.md`
+- `tasks/task-005-cli-first-assistant-routing-and-actions.md`
+- `tasks/task-006-cli-first-assistant-validation-and-readiness.md`
 
 ## Linked Project Files
 - `projects/local-assistant-mvp-spec.md`
 - `projects/local-assistant-implementation-options.md`
 - `projects/local-assistant-mvp-build-sequence.md`
+- `projects/local-assistant-mvp-build-breakdown.md`
+- `projects/local-assistant-implementation-repo-structure.md`
+- `projects/local-assistant-interface-contracts.md`
+- `projects/local-assistant-mvp-validation-plan.md`
+- `projects/local-assistant-storage-architecture.md`
+
+## Implementation Layer
+- `implementation/local-assistant-cli/README.md`
+- `implementation/local-assistant-cli/src/README.md`
+- `implementation/local-assistant-cli/tests/README.md`
+- `implementation/local-assistant-cli/tests/fixtures/README.md`
+- `implementation/local-assistant-cli/docs/README.md`
 
 ## Linked Workflows
 - `workflows/atlas-command-router.md`
@@ -62,15 +78,19 @@ MVP specification
 1. define blueprint and project scope
 2. define the smallest useful MVP specification
 3. compare implementation options and choose a first direction
-4. create the first build-oriented task for the MVP
-5. test assistant-oriented task routing in live use
-6. add more local-first components later
+4. define build breakdown, contracts, validation, and storage rules
+5. prepare the implementation layer structure
+6. execute the first build-oriented task for the MVP
+7. test assistant-oriented task routing in live use
+8. add more local-first components later
 
 ## Current Milestone Status
 - blueprint and project scope: complete
 - MVP specification: complete
 - implementation direction selection: complete
-- first build-oriented task: next
+- build breakdown/contracts/validation/storage: complete
+- implementation layer structure: complete
+- first build-oriented task execution: next
 
 ## Success Criteria
 - the assistant effort is tracked as a project
@@ -78,14 +98,15 @@ MVP specification
 - linked tasks can be created incrementally
 - the project stays practical and integration-focused
 - the first build direction remains useful, controllable, and low-complexity
+- implementation can begin with minimal ambiguity
 
 ## Open Questions
-- what exact local runtime wrapper should be adopted after the CLI-first version proves useful
+- what exact runtime/toolchain should be used when build execution starts
 - what voice path should be used first after the MVP core works
 - how much memory should remain repo-based vs local-state-based in later versions
 
-## Explicit Next Milestone After MVP Spec
-Create the first build-oriented task for the CLI-first local assistant MVP and define the smallest shippable implementation pass.
+## Explicit Next Milestone
+Execute `task-004` and begin the first CLI-first implementation pass inside `/implementation/local-assistant-cli/`.
 
 ## Next Best Action
-Create `task-004` for the first CLI-first build pass of the local assistant MVP.
+Start build execution for `task-004-cli-first-assistant-foundation.md`.
