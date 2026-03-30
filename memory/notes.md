@@ -14,3 +14,14 @@ Atlas OS is a personal AI operating system built around:
 - reduce unnecessary clicks
 - stop before irreversible action
 - convert repeated work into reusable workflows
+
+## First Live Workflow Instance
+- The first real live Atlas workflow instance has been created in `/tasks/task-001-atlas-daily-operating-loop.md`.
+- Atlas OS now has a practical daily operating loop for startup, intake, execution, memory, review, and weekly stabilization.
+
+## New Proven Capability
+The system can now:
+- create and track live task instances
+- route work through intake, command, execution, and review workflows
+- capture reusable operating commands
+- update memory and logs as part of a real task run
