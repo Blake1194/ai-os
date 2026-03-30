@@ -70,5 +70,19 @@ Approval is still required later for:
 ## Relation to MVP Spec
 This task implements the first boundary of the CLI-first MVP by turning “simple command intake” into a concrete build target.
 
+## Step-by-Step Execution Instructions
+1. define the exact raw input the module accepts
+2. define the normalized request object shape
+3. define default behavior when no mode is provided
+4. define empty-input and unsupported-input handling
+5. define the handoff output for the routing layer
+6. record small example inputs and normalized outputs
+7. confirm no file writes are part of this task
+
+## Execution Notes
+- keep the first intake layer text-only
+- do not mix routing or file writes into this module
+- the goal is a stable front door, not a full assistant loop
+
 ## Next Best Action
 Begin `task-005-cli-routing-layer.md` after intake assumptions are fixed.
