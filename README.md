@@ -36,7 +36,7 @@ ai-os now includes a defined MVP direction for the personalized assistant effort
 ai-os now includes the implementation-readiness layer for the first usable CLI-first assistant shell: build tasks, interface/contracts, validation criteria, storage guidance, an implementation folder skeleton, and an implementation-ready checkpoint.
 
 ## Implementation Start
-ai-os now includes the first-build execution package for the CLI-first assistant MVP: task-level execution steps, a first-build runbook, an execution checklist, intake examples, and a defined request-intake module boundary under the implementation layer.
+ai-os now includes the first-build execution package for the CLI-first assistant MVP: task-level execution steps, a first-build runbook, an execution checklist, intake examples, a defined request-intake module boundary, and an implementation-start entrypoint specification layer under the source directory.
 
 ## Recovery Checkpoints
 The repository now includes a `/checkpoints/` folder with durable recovery snapshots so Atlas OS can be resumed quickly if chat context is lost or a browser session ends.

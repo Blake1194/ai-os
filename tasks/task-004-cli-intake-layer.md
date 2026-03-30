@@ -19,7 +19,7 @@ Mixed:
 - MVP build planning
 
 ## Current Status
-The first request-intake module definition now exists under the implementation layer and the task is ready to transition into actual implementation execution.
+The first request-intake module definition and implementation-start specification layer now exist under the implementation layer. The task is ready for the first concrete implementation file.
 
 ## Scope
 - define the expected command/request input shape
@@ -47,6 +47,9 @@ The first request-intake module definition now exists under the implementation l
 
 ## Related Implementation Files
 - `implementation/local-assistant-cli/src/request-intake/README.md`
+- `implementation/local-assistant-cli/src/request_intake_entrypoint.md`
+- `implementation/local-assistant-cli/src/module-contracts.md`
+- `implementation/local-assistant-cli/src/implementation-notes.md`
 - `implementation/local-assistant-cli/tests/fixtures/request-intake-fixtures.md`
 
 ## Success Criteria
@@ -89,4 +92,4 @@ This task implements the first boundary of the CLI-first MVP by turning “simpl
 - the goal is a stable front door, not a full assistant loop
 
 ## Next Best Action
-Create the first concrete implementation file for the request-intake module using the chosen runtime/toolchain when approved.
+Create the first concrete `request_intake_entrypoint` implementation file using the chosen runtime/toolchain when approved.

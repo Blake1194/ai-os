@@ -21,10 +21,10 @@ A staged assistant system with versioned milestones, clear scope, reusable archi
 This project gives Atlas OS a clear path toward a real personal assistant layer instead of remaining only a repository and workflow framework.
 
 ## Current Status
-Active — the first actual implementation piece is now defined under the implementation layer.
+Active — the first actual implementation piece and its implementation-start specification layer now exist under the implementation layer.
 
 ## Current Phase
-Implementation start package complete; first module definition created
+Implementation start package complete; request-intake entrypoint specification defined
 
 ## Core Tools Involved
 - ChatGPT
@@ -61,6 +61,9 @@ Implementation start package complete; first module definition created
 - `implementation/local-assistant-cli/README.md`
 - `implementation/local-assistant-cli/src/README.md`
 - `implementation/local-assistant-cli/src/request-intake/README.md`
+- `implementation/local-assistant-cli/src/request_intake_entrypoint.md`
+- `implementation/local-assistant-cli/src/module-contracts.md`
+- `implementation/local-assistant-cli/src/implementation-notes.md`
 - `implementation/local-assistant-cli/tests/README.md`
 - `implementation/local-assistant-cli/tests/fixtures/README.md`
 - `implementation/local-assistant-cli/tests/fixtures/request-intake-fixtures.md`
@@ -92,9 +95,10 @@ Implementation start package complete; first module definition created
 5. prepare the implementation layer structure
 6. create the implementation-preparation task set for intake, routing, memory, and reporting
 7. define the first actual implementation piece under the implementation layer
-8. begin the first actual implementation file
-9. test assistant-oriented task routing in live use
-10. add more local-first components later
+8. define the implementation-start specification layer for that first piece
+9. begin the first actual implementation file
+10. test assistant-oriented task routing in live use
+11. add more local-first components later
 
 ## Current Milestone Status
 - blueprint and project scope: complete
@@ -104,6 +108,7 @@ Implementation start package complete; first module definition created
 - implementation layer structure: complete
 - implementation-preparation task set created: complete
 - first actual implementation piece defined: complete
+- implementation-start specification layer: complete
 - first actual implementation file: next
 
 ## Success Criteria
@@ -120,7 +125,7 @@ Implementation start package complete; first module definition created
 - how much memory should remain repo-based vs local-state-based in later versions
 
 ## Explicit Next Milestone
-Create the first actual request-intake implementation file under `/implementation/local-assistant-cli/src/`.
+Create the first actual `request_intake_entrypoint` implementation file under `/implementation/local-assistant-cli/src/`.
 
 ## Next Best Action
-Start the first concrete implementation file for the request-intake module when approved.
+Start the first concrete implementation file for the request-intake entrypoint when approved.
