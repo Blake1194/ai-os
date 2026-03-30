@@ -38,6 +38,10 @@ Implementation-ready MVP build planning complete
 - `tasks/task-004-cli-first-assistant-foundation.md`
 - `tasks/task-005-cli-first-assistant-routing-and-actions.md`
 - `tasks/task-006-cli-first-assistant-validation-and-readiness.md`
+- `tasks/task-004-cli-intake-layer.md`
+- `tasks/task-005-cli-routing-layer.md`
+- `tasks/task-006-memory-write-read.md`
+- `tasks/task-007-logging-and-reporting.md`
 
 ## Linked Project Files
 - `projects/local-assistant-mvp-spec.md`
@@ -48,6 +52,8 @@ Implementation-ready MVP build planning complete
 - `projects/local-assistant-interface-contracts.md`
 - `projects/local-assistant-mvp-validation-plan.md`
 - `projects/local-assistant-storage-architecture.md`
+- `implementation/local-assistant-build-order.md`
+- `implementation/first-build-step.md`
 
 ## Implementation Layer
 - `implementation/local-assistant-cli/README.md`
@@ -80,9 +86,10 @@ Implementation-ready MVP build planning complete
 3. compare implementation options and choose a first direction
 4. define build breakdown, contracts, validation, and storage rules
 5. prepare the implementation layer structure
-6. execute the first build-oriented task for the MVP
-7. test assistant-oriented task routing in live use
-8. add more local-first components later
+6. create the implementation-preparation task set for intake, routing, memory, and reporting
+7. begin the first actual implementation step
+8. test assistant-oriented task routing in live use
+9. add more local-first components later
 
 ## Current Milestone Status
 - blueprint and project scope: complete
@@ -90,7 +97,8 @@ Implementation-ready MVP build planning complete
 - implementation direction selection: complete
 - build breakdown/contracts/validation/storage: complete
 - implementation layer structure: complete
-- first build-oriented task execution: next
+- implementation-preparation task set created: complete
+- first actual implementation step: next
 
 ## Success Criteria
 - the assistant effort is tracked as a project
@@ -106,7 +114,7 @@ Implementation-ready MVP build planning complete
 - how much memory should remain repo-based vs local-state-based in later versions
 
 ## Explicit Next Milestone
-Execute `task-004` and begin the first CLI-first implementation pass inside `/implementation/local-assistant-cli/`.
+Begin the first actual implementation step described in `implementation/first-build-step.md`.
 
 ## Next Best Action
-Start build execution for `task-004-cli-first-assistant-foundation.md`.
+Start the first actual implementation step for the request-intake module.
