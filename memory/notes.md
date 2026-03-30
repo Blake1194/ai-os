@@ -34,6 +34,11 @@ The system can now:
 - Atlas OS now has an active local assistant blueprint effort.
 - This unlocks a clear path from workflow system design into a future branded assistant layer with versioned milestones.
 
+## Local Assistant MVP Direction
+- Atlas OS now has an explicit local assistant MVP direction.
+- The assistant effort has moved from broad vision into a bounded first implementation target.
+- The next steps are now clearer: turn the chosen CLI-first MVP direction into build-oriented tasks.
+
 ## Recovery / Resume Support
 - Atlas OS now has an explicit recovery checkpoint system in `/checkpoints/`.
 - This makes it easier to resume safely after context loss, browser interruption, or assistant handoff.
