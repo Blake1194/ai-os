@@ -16,7 +16,8 @@ Major layers now established in the repo:
 - memory layer
 - session log layer
 - recovery checkpoint layer
-- early local assistant blueprint layer
+- local assistant blueprint layer
+- local assistant MVP specification layer
 
 ## 2. Completed So Far
 Major milestones completed so far:
@@ -26,7 +27,8 @@ Major milestones completed so far:
 - first live workflow instance created
 - template layer created
 - local assistant blueprint task and project created
-- recovery checkpoint system now added
+- recovery checkpoint system added
+- local assistant MVP specification layer created
 
 More specifically:
 - initial repo structure includes README, system docs, commands, memory, and logs
@@ -34,35 +36,31 @@ More specifically:
 - the first live task instance established the Atlas daily operating loop
 - reusable templates were added for tasks, projects, logs, decisions, intake, and workflows
 - the first serious local assistant direction was defined through `task-002` and `project-001`
+- `task-003` now defines the smallest useful assistant MVP, compares implementation options, and recommends the first implementation direction
 
 ## 3. Current Active Items
 Current active task(s):
-- `tasks/task-002-local-assistant-blueprint.md` — completed initial blueprint, still the main active assistant direction reference
-- likely next task: `task-003` for a smallest useful MVP/local assistant shell spec
+- `tasks/task-002-local-assistant-blueprint.md` — assistant vision and staged direction anchor
+- `tasks/task-003-local-assistant-mvp-spec.md` — current MVP definition anchor
+- likely next task: `task-004` for the first build-oriented CLI-first assistant pass
 
 Current active project(s):
 - `projects/project-001-local-assistant.md` — primary active project
 
 Major files that matter most right now:
 - `README.md`
-- `system/architecture.md`
-- `system/core-stack.md`
-- `system/roadmap.md`
-- `system/template-system.md`
-- `workflows/intake-workflow.md`
-- `workflows/atlas-command-router.md`
-- `workflows/task-execution-workflow.md`
-- `workflows/session-review-workflow.md`
-- `tasks/task-001-atlas-daily-operating-loop.md`
+- `checkpoints/checkpoint-001-current-state.md`
 - `tasks/task-002-local-assistant-blueprint.md`
+- `tasks/task-003-local-assistant-mvp-spec.md`
 - `projects/project-001-local-assistant.md`
-- `commands/command-library.md`
-- `commands/daily-operating-loop.md`
+- `projects/local-assistant-mvp-spec.md`
+- `projects/local-assistant-implementation-options.md`
+- `projects/local-assistant-mvp-build-sequence.md`
 - `commands/local-assistant-commands.md`
+- `commands/local-assistant-mvp-commands.md`
 - `memory/notes.md`
 - `memory/decisions.md`
-- `logs/session-log-005.md`
-- `logs/session-log-006.md`
+- `logs/session-log-007.md`
 
 ## 4. Important Files to Read First
 Recommended recovery reading order:
@@ -71,40 +69,24 @@ Recommended recovery reading order:
    - fastest top-level orientation
 2. `checkpoints/checkpoint-001-current-state.md`
    - current durable resume snapshot
-3. `system/architecture.md`
-   - overall Atlas OS structure
-4. `system/core-stack.md`
-   - role of ChatGPT, Do Browser, GitHub, Cursor, and future layers
-5. `system/roadmap.md`
-   - broader direction and phased growth
-6. `system/template-system.md`
-   - how recurring repo objects are standardized
-7. `workflows/intake-workflow.md`
-   - how new requests are classified
-8. `workflows/atlas-command-router.md`
-   - how work gets routed across layers
-9. `workflows/task-execution-workflow.md`
-   - how live work should be executed safely
-10. `workflows/session-review-workflow.md`
-    - how work is reviewed and closed out
-11. `tasks/task-001-atlas-daily-operating-loop.md`
-    - first live workflow instance
-12. `tasks/task-002-local-assistant-blueprint.md`
-    - current assistant direction anchor
-13. `projects/project-001-local-assistant.md`
-    - broader assistant project structure
-14. `commands/command-library.md`
-    - general command usage patterns
-15. `commands/daily-operating-loop.md`
-    - recurring Atlas operating command
-16. `commands/local-assistant-commands.md`
-    - assistant-specific command set
-17. `memory/notes.md`
-    - current understanding and recent capability state
-18. `memory/decisions.md`
-    - architectural and operating decisions already locked
-19. `logs/session-log-001.md` through latest session log
-    - reconstruct sequence of major repo evolution steps
+3. `tasks/task-002-local-assistant-blueprint.md`
+   - assistant vision and boundaries
+4. `tasks/task-003-local-assistant-mvp-spec.md`
+   - smallest useful MVP definition
+5. `projects/project-001-local-assistant.md`
+   - project phase and milestone state
+6. `projects/local-assistant-mvp-spec.md`
+   - clean project-facing MVP summary
+7. `projects/local-assistant-implementation-options.md`
+   - implementation tradeoff comparison and recommendation
+8. `projects/local-assistant-mvp-build-sequence.md`
+   - safe next build order
+9. `memory/decisions.md`
+   - locked architectural and operating choices
+10. `memory/notes.md`
+    - latest capability and direction summary
+11. latest session logs
+    - reconstruct the recent sequence of system evolution
 
 ## 5. Decisions Already Made
 Most important decisions already made:
@@ -118,39 +100,36 @@ Most important decisions already made:
 - templates should be used for recurring system objects
 - the daily operating loop is the first core human-to-system interaction pattern
 - the local assistant should be built in stages with usefulness first
-- local assistant work should fit inside Atlas OS rather than replace the command center immediately
+- the assistant should now advance through staged MVP-first progress
+- the first implementation should optimize for usefulness, controllability, and low complexity
+- the recommended first implementation direction is CLI-first
 
 ## 6. Current Best Understanding of the Goal
 Overall mission of Atlas OS:
 Create a practical personal AI operating system that lets the human use voice-first direction and minimal manual effort to think, route work, operate the browser, preserve memory, and build increasingly durable execution patterns over time.
 
 Current direction for the personalized local assistant:
-Build a staged local-first assistant that grows out of Atlas OS. In the near term, it remains a documented and workflow-connected assistant layer. Over time, it should gain stronger voice handling, memory/state persistence, local orchestration, and tighter command routing while still using Atlas OS as its reasoning, workflow, and memory backbone.
+Build a staged local-first assistant that grows out of Atlas OS. The current first implementation target is a CLI-first assistant shell that can accept a request, classify it, route it into the correct Atlas repo structure, write durable outputs, and report back clearly.
 
 ## 7. Single Next Best Action
-Create `task-003` as the MVP specification for the first usable assistant shell, defining:
-- voice input flow
-- command routing behavior
-- memory read/write behavior
-- safe execution boundaries
-- smallest useful deliverable
+Create `task-004` for the first build-oriented CLI-first assistant MVP pass.
 
 ## 8. Resume Instructions
 If conversation context is lost, resume in this order:
 1. open `README.md`
 2. open this checkpoint file
-3. read `memory/decisions.md` to avoid undoing prior architecture choices
-4. read `tasks/task-002-local-assistant-blueprint.md` and `projects/project-001-local-assistant.md`
-5. identify the single next best action listed here
+3. read `memory/decisions.md` to avoid undoing prior architectural choices
+4. read `task-002`, `task-003`, and `project-001`
+5. review the implementation options and build sequence files
 6. create the next task using the template system rather than improvising structure
 7. continue operating in Atlas execution mode: act first, minimize clicks, stop before irreversible actions
-8. update logs, notes, and decisions as part of the next task run
+8. update logs, notes, decisions, and checkpoint state as part of the next task run
 
 Plain-English reminder:
-If you are a future assistant or human, do not restart from scratch. Treat this repo as the memory spine, use the checkpoint as the current map, then continue from the next task rather than rebuilding prior architecture.
+Do not restart from scratch. Treat this repo as the memory spine, use this checkpoint as the current map, and continue from `task-004` rather than rebuilding previous thinking.
 
 ## 9. Last Safe State
-The repo is currently at a **safe documentation and specification stage**.
+The repo is currently at a **safe documentation, specification, and build-planning stage**.
 It has **not** yet crossed into:
 - installs
 - credentials
@@ -158,4 +137,4 @@ It has **not** yet crossed into:
 - destructive environment changes
 - live system deployment
 
-This means recovery can safely resume from documentation, planning, workflow, and specification work without needing to unwind risky implementation changes.
+This means recovery can safely resume from repo-based planning and build sequencing without needing to unwind risky implementation changes.
