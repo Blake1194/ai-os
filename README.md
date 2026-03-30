@@ -26,6 +26,9 @@ Core workflow files live in `/workflows/` and define routing, execution, intake,
 ## Template Layer
 The repository now includes a standardized template layer for recurring Atlas system objects such as tasks, projects, decisions, workflows, intake records, and session logs. These templates reduce ad hoc structure and make repeated system use more consistent.
 
+## Local Assistant Direction
+ai-os now includes an active blueprint and project structure for a future personalized assistant. This creates a practical path from Atlas workflows and memory into a branded local-first assistant effort.
+
 ## Long-Term Vision
 Atlas OS should become a personal AI operating environment that can:
 - understand voice commands
