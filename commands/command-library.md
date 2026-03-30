@@ -39,3 +39,11 @@
 ## Daily Operating Commands
 - Run Atlas startup: scan tabs, inbox, blockers, and next best action.
 - Run Atlas shutdown: log progress, save context, and queue tomorrow's first task.
+
+## Template Usage Commands
+- Create a new task from template.
+- Create a new project from template.
+- Log this session using the session template.
+- Turn this input into an intake record.
+- Turn this architecture choice into a decision record.
+- Promote this repeatable pattern into a workflow template.
