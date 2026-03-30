@@ -18,6 +18,9 @@ The repo now contains:
 - concrete implementation-preparation tasks for intake, routing, memory, and reporting
 - implementation build order
 - first build step definition
+- first build runbook
+- execution checklist
+- request-intake examples
 
 ## What Remains
 Implementation execution has not started yet.
@@ -35,7 +38,8 @@ Its responsibility is to accept a raw request, normalize it into the MVP request
 2. complete `task-005-cli-routing-layer.md`
 3. complete `task-006-memory-write-read.md`
 4. complete `task-007-logging-and-reporting.md`
-5. begin the first actual implementation step defined in `implementation/first-build-step.md`
+5. follow `implementation/first-build-runbook.md`
+6. begin the first actual implementation step defined in `implementation/first-build-step.md`
 
 ## Current Safe State
 The project is still inside safe repo-only planning/readiness work.
@@ -51,13 +55,16 @@ If resuming later:
 2. read this checkpoint
 3. read `implementation/local-assistant-build-order.md`
 4. read `implementation/first-build-step.md`
-5. read `projects/local-assistant-interface-contracts.md`
-6. begin the first actual implementation step when approved
+5. read `implementation/first-build-runbook.md`
+6. read `implementation/execution-checklist.md`
+7. begin the first actual implementation step when approved
 
 ## Readiness Update
 - build tasks `004` to `007` now exist
 - build order now exists
 - first build step now exists
+- first build runbook now exists
+- execution checklist now exists
 - the system is ready for the first actual implementation action once approved
 
 ## Ready State Declaration
