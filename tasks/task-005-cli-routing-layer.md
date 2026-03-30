@@ -68,5 +68,19 @@ Approval is still required later for:
 ## Relation to MVP Spec
 This task turns “command routing” from the MVP spec into a concrete, testable build layer.
 
+## Step-by-Step Execution Instructions
+1. define the supported classifications: note, task, log, status-summary
+2. define how normalized input is matched to a classification
+3. map each classification to its next action path
+4. define blocked and unsupported routing behavior
+5. define the routing result object passed to memory/write logic
+6. create example routing decisions from sample requests
+7. confirm routing itself does not perform writes
+
+## Execution Notes
+- routing should stay small and explicit
+- avoid hidden heuristics in the first pass
+- the output must be predictable enough for memory and reporting layers to trust
+
 ## Next Best Action
 Begin `task-006-memory-write-read.md` after the routing map is fixed.
