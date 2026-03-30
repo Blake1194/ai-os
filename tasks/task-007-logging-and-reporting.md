@@ -72,5 +72,19 @@ Approval is still required later for:
 ## Relation to MVP Spec
 This task turns the MVP “report back clearly” requirement into a concrete build layer that can be implemented and tested.
 
+## Step-by-Step Execution Instructions
+1. define the result object shape for ok, partial, blocked, and unsupported states
+2. define how files-read and files-written are reported
+3. define when a log update should happen and when it should not
+4. define summary wording rules so the output stays short and verifiable
+5. define partial-failure and blocked-response wording
+6. create example outputs for success and failure scenarios
+7. verify the reporting contract matches the validation plan
+
+## Execution Notes
+- reporting must describe what actually happened, not what was intended
+- keep the output compact and audit-friendly
+- this layer should make manual verification easy
+
 ## Next Best Action
 Begin the first actual implementation step described in `implementation/first-build-step.md` once tasks 004–007 are accepted.
