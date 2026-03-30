@@ -29,3 +29,7 @@ The system can now:
 ## Template Layer
 - Atlas OS now has a reusable template layer for standardized execution.
 - Standard system objects can now be created without rebuilding structure from scratch each time.
+
+## Local Assistant Blueprint Effort
+- Atlas OS now has an active local assistant blueprint effort.
+- This unlocks a clear path from workflow system design into a future branded assistant layer with versioned milestones.
