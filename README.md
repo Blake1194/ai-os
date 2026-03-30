@@ -23,6 +23,9 @@ The repository now includes an operating workflow layer that defines how Atlas h
 
 Core workflow files live in `/workflows/` and define routing, execution, intake, and review behavior.
 
+## Template Layer
+The repository now includes a standardized template layer for recurring Atlas system objects such as tasks, projects, decisions, workflows, intake records, and session logs. These templates reduce ad hoc structure and make repeated system use more consistent.
+
 ## Long-Term Vision
 Atlas OS should become a personal AI operating environment that can:
 - understand voice commands
