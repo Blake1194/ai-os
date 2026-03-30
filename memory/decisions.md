@@ -12,3 +12,6 @@
 ## Daily Operating Decisions
 - Atlas OS will use a daily operating loop as the primary human-to-system interaction pattern.
 - Reusable operating behavior should be captured as command templates and workflows.
+
+## Template Decisions
+- Future repeatable work in Atlas OS should use templates whenever possible instead of ad hoc structure.
