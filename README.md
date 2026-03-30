@@ -32,6 +32,9 @@ ai-os now includes an active blueprint and project structure for a future person
 ## Local Assistant MVP Specification
 ai-os now includes a defined MVP direction for the personalized assistant effort. The repository contains a bounded first implementation target, a comparison of realistic implementation options, and a recommended CLI-first direction for the first practical assistant shell.
 
+## Implementation Readiness
+ai-os now includes the implementation-readiness layer for the first usable CLI-first assistant shell: build tasks, interface/contracts, validation criteria, storage guidance, an implementation folder skeleton, and an implementation-ready checkpoint.
+
 ## Recovery Checkpoints
 The repository now includes a `/checkpoints/` folder with durable recovery snapshots so Atlas OS can be resumed quickly if chat context is lost or a browser session ends.
 
