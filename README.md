@@ -29,6 +29,9 @@ The repository now includes a standardized template layer for recurring Atlas sy
 ## Local Assistant Direction
 ai-os now includes an active blueprint and project structure for a future personalized assistant. This creates a practical path from Atlas workflows and memory into a branded local-first assistant effort.
 
+## Local Assistant MVP Specification
+ai-os now includes a defined MVP direction for the personalized assistant effort. The repository contains a bounded first implementation target, a comparison of realistic implementation options, and a recommended CLI-first direction for the first practical assistant shell.
+
 ## Recovery Checkpoints
 The repository now includes a `/checkpoints/` folder with durable recovery snapshots so Atlas OS can be resumed quickly if chat context is lost or a browser session ends.
 
