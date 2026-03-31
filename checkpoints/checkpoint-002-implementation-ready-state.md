@@ -106,3 +106,9 @@ Atlas OS is now **ready to begin implementation planning/build execution** for t
 - GitHub remains the durable source of truth for notes, tasks, logs, decisions, checkpoints, and implementation/build artifacts
 - the tracker should trigger repo writeback when a row becomes durable or resume-critical
 - the Google Sheets tracker specification layer is now defined
+
+## Google Live Operations Test Update
+- the first live Google Sheet `Atlas OS Live Operations Tracker` has been created
+- the tabs `Live Tracker` and `Archive` now exist as the first live tracker surface
+- the row `OPS-001` was used for a controlled manual writeback test into `logs/session-log-018.md`
+- the Google live-ops lane is now operational for lightweight structured tracking plus small durable repo writeback

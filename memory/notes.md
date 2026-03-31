@@ -64,3 +64,6 @@ The system can now:
 - The first Google operational surface should be a lightweight live operations tracker rather than a broad Google system rollout.
 - GitHub remains the durable source of truth for notes, tasks, logs, decisions, checkpoints, and implementation artifacts.
 - Google Sheets should hold only compact live operational rows and should write durable outcomes back into GitHub when they matter.
+- The first live Google Sheet `Atlas OS Live Operations Tracker` has been created with the tabs `Live Tracker` and `Archive`.
+- The row `OPS-001` was used for a controlled writeback test into `logs/session-log-018.md`.
+- This proves the Google live-ops lane is now operational for lightweight structured tracking and safe repo writeback.
