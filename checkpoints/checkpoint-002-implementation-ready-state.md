@@ -33,19 +33,19 @@ The repo now contains:
 ## What Remains
 Implementation execution has not started yet.
 What remains is the first real build pass:
-- validate and refine the first code-facing `request_intake_entrypoint.js` implementation file under `/implementation/local-assistant-cli/src/`
-- keep it limited to normalization and safe invalid-input handling
-- then create the first code-facing `routing_entrypoint` implementation file under `/implementation/local-assistant-cli/src/`
+- begin the first code-facing `routing_entrypoint` implementation file under `/implementation/local-assistant-cli/src/` using the validated request-intake boundary
 - keep it limited to explicit classification and safe unsupported routing behavior
+- then complete `task-006-memory-write-read.md`
+- then complete `task-007-logging-and-reporting.md`
 
 ## First Implementation Action
-Validate the first `request_intake_entrypoint.js` implementation file under `/implementation/local-assistant-cli/src/`.
-Its responsibility remains to accept a raw request, normalize it into the MVP request shape, and safely reject empty or unsupported input.
+Begin the first `routing_entrypoint` implementation file under `/implementation/local-assistant-cli/src/` when approved.
+Its responsibility should be limited to consuming a valid intake result, classifying it safely, and refusing unsupported routing behavior without writing files.
 
 ## Current Recommended Sequence
 1. complete `task-004-cli-intake-layer.md`
 2. use `implementation/local-assistant-cli/src/request_intake_entrypoint.md` as the build contract
-3. validate the first concrete `request_intake_entrypoint.js` implementation file
+3. use `implementation/local-assistant-cli/src/routing_entrypoint.prep.md` as the next routing prep boundary
 4. complete `task-005-cli-routing-layer.md`
 5. use `implementation/local-assistant-cli/src/routing_entrypoint.md` as the build contract
 6. create the first concrete `routing_entrypoint` implementation file
@@ -82,7 +82,7 @@ If resuming later:
 5. read `implementation/local-assistant-cli/src/request_intake_entrypoint.md`
 6. read `implementation/local-assistant-cli/src/routing_entrypoint.md`
 7. read `implementation/local-assistant-cli/src/module-contracts.md`
-8. begin the first actual implementation file when approved
+8. begin the next approved implementation file when approved
 
 ## Readiness Update
 - build tasks `004` to `007` now exist
@@ -98,7 +98,7 @@ If resuming later:
 - the first actual implementation file now exists in a narrow first-pass form
 
 ## Ready State Declaration
-Atlas OS is now **ready to begin implementation planning/build execution** for the CLI-first local assistant MVP with minimal ambiguity.
+Atlas OS is now **ready to continue implementation planning/build execution** for the CLI-first local assistant MVP with minimal ambiguity.
 
 ## Google Tracker Update
 - the first Google operational surface should be a lightweight Google Sheets live tracker
@@ -130,3 +130,9 @@ Atlas OS is now **ready to begin implementation planning/build execution** for t
 - the first example/output reference file now exists at `implementation/local-assistant-cli/src/request_intake_entrypoint.examples.md`
 - the Codex handoff package now exists at `implementation/codex-handoff.md`
 - no install or tooling expansion has started; the code artifact remains inside the narrow first-pass boundary
+
+## First Code Validation Update
+- `request_intake_entrypoint.js` is now treated as first-pass validated based on the checks actually run
+- the validation record exists at `implementation/local-assistant-cli/src/request_intake_entrypoint.validation.md`
+- no code refinement was needed in the validation pass
+- `implementation/local-assistant-cli/src/routing_entrypoint.prep.md` now exists as the next narrow prep artifact

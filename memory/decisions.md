@@ -73,3 +73,9 @@
 - The first code pass must remain limited to request normalization and structured refusal behavior.
 - Codex should only be used later within the existing first-pass boundary and must not expand scope, tooling, or architecture prematurely.
 - The existence of the first code file does not authorize installs, runtime expansion, or broader implementation behavior beyond the defined boundary.
+
+## First Code Validation Decision
+- The first code artifact is now treated as first-pass validated based on the examples, refusal cases, and boundary checks actually run.
+- No code refinement was needed during this validation pass.
+- The next prep artifact is `implementation/local-assistant-cli/src/routing_entrypoint.prep.md`.
+- Routing code should remain the next implementation step only within the same narrow first-pass boundary.

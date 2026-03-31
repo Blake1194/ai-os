@@ -19,7 +19,7 @@ Mixed:
 - MVP build planning
 
 ## Current Status
-The first request-intake module definition and implementation-start specification layer now exist under the implementation layer, and the first concrete implementation file now exists in a narrow first-pass form.
+The first request-intake module definition and implementation-start specification layer now exist under the implementation layer, the first concrete implementation file exists, and that file is now first-pass validated against the documented examples and boundaries.
 
 ## Scope
 - define the expected command/request input shape
@@ -92,7 +92,7 @@ This task implements the first boundary of the CLI-first MVP by turning “simpl
 - the goal is a stable front door, not a full assistant loop
 
 ## Next Best Action
-Validate the first-pass `request_intake_entrypoint.js` behavior against the documented examples and keep the boundary narrow before moving to the routing implementation file.
+Use `implementation/local-assistant-cli/src/routing_entrypoint.prep.md` to begin the narrow routing implementation step when approved, while preserving the same first-pass boundary discipline.
 
 ## Live Ops Promoted Outcome
 - The next smallest real code-facing action for this task is to create the first concrete `request_intake_entrypoint` implementation file when runtime/toolchain approval exists.
@@ -111,3 +111,9 @@ Validate the first-pass `request_intake_entrypoint.js` behavior against the docu
 - `implementation/local-assistant-cli/src/request_intake_entrypoint.examples.md` now exists as the first example/output reference set for this file.
 - The first pass stays limited to request normalization and structured refusal behavior only.
 - Routing, file writes, logging, external calls, and broader tooling expansion remain deferred.
+
+## First Code Artifact Validation
+- `request_intake_entrypoint.js` was validated against the documented examples, refusal cases, and first-pass boundary rules.
+- No code refinement was needed in the validation pass.
+- The validation record now exists at `implementation/local-assistant-cli/src/request_intake_entrypoint.validation.md`.
+- The next prep artifact now exists at `implementation/local-assistant-cli/src/routing_entrypoint.prep.md`.

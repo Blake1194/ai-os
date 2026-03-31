@@ -67,3 +67,6 @@ ai-os now includes the minimal runtime/toolchain decision layer for the first co
 
 ## First Code Artifact
 ai-os now includes the first actual code-facing implementation file for the CLI-first local assistant MVP at `implementation/local-assistant-cli/src/request_intake_entrypoint.js`. The first example/output reference file and Codex handoff package now also exist, while scope remains tightly limited to the approved first-pass boundary.
+
+## First Code Validation
+ai-os now includes a first-pass validation layer for `implementation/local-assistant-cli/src/request_intake_entrypoint.js` in `implementation/local-assistant-cli/src/request_intake_entrypoint.validation.md`. The next preparation artifact for routing also now exists at `implementation/local-assistant-cli/src/routing_entrypoint.prep.md` while scope remains tightly bounded.
