@@ -49,6 +49,12 @@ The system can now:
 - The current Do lane, GitHub repo, browser environment, and background mode should be used as the main operating stack.
 - Google Sheets and additional Do lanes should stay optional until they clearly reduce work instead of multiplying coordination.
 
+## Google-First Operations Layer
+- Atlas OS now has a Google-first operations layer in `/projects/google-first-operations-plan.md`, `/projects/google-workspace-integration-map.md`, `/commands/google-ops-commands.md`, and `/profile/google-lane-preferences.md`.
+- GitHub should remain the command, memory, and build spine.
+- Google Workspace should become the preferred live operations lane.
+- Browser + Google + GitHub is now the preferred near-term stack.
+
 ## Recovery / Resume Support
 - Atlas OS now has an explicit recovery checkpoint system in `/checkpoints/`.
 - This makes it easier to resume safely after context loss, browser interruption, or assistant handoff.

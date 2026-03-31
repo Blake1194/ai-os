@@ -36,3 +36,9 @@
 - The GitHub repo and the current Do lane remain the core operating surfaces.
 - Google Sheets should be used only for clearly structured tracking that adds real leverage over markdown.
 - A second Do lane should be treated as optional and justified only when it reduces confusion instead of increasing it.
+
+## Google Operations Decisions
+- Atlas OS should remain GitHub-centered for system memory and implementation planning.
+- Google Workspace should become the preferred live operations lane.
+- Browser + Google + GitHub is the preferred near-term operating stack.
+- Future integrations should favor simplicity and continuity over scattered tool expansion.

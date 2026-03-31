@@ -27,6 +27,7 @@ The repo now contains:
 - the implementation-start specification layer for the routing entrypoint
 - routing fixtures for safe first-pass testing
 - a resource-leverage layer for current tools, integrations, sessions, and browser lanes
+- a Google-first operations layer for live operational use of Google Workspace
 
 ## What Remains
 Implementation execution has not started yet.
@@ -57,6 +58,12 @@ Its responsibility is to accept a raw request, normalize it into the MVP request
 - Google Sheets is available but should stay optional until structured tracking clearly adds leverage
 - additional Do lanes should be avoided unless clearly justified
 
+## Google Operations Update
+- GitHub remains the command, memory, and build spine
+- Google Workspace is now the preferred live operations lane
+- Google Sheets is the most immediately useful Google surface for structured tracking
+- Drive, Docs, Gmail, Calendar, Tasks/Keep, and Apps Script should be introduced only when they support a specific stable workflow
+
 ## Current Safe State
 The project is still inside safe repo-only planning/readiness work.
 It has not yet crossed into:
@@ -86,6 +93,7 @@ If resuming later:
 - the intake implementation-start specification layer is now defined
 - the routing implementation-start specification layer is now defined
 - the resource-leverage layer is now defined
+- the Google-first operations layer is now defined
 - the system is ready for the first actual implementation file once approved
 
 ## Ready State Declaration

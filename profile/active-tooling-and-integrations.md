@@ -30,16 +30,22 @@
 - role: local staging and drafting surface before repo updates
 - status: active supporting capability
 
-## Optional / Controlled-Use Capabilities
+## Google Workspace Lanes
 ### Google Sheets Connection
 - role: structured tracking surface
-- status: available / optional
+- status: available / preferred live-ops option when tables add leverage
 
+### Google Workspace More Broadly
+- role: preferred live operations lane over scattered tool sprawl
+- status: planned-preferred operational direction
+
+## Optional / Controlled-Use Capabilities
 ### Additional Do Thread / Session Lane
 - role: secondary execution lane if clearly justified
 - status: possible / optional
 
 ## Current Stance
-- keep repo + current Do lane as the main path
-- use optional capabilities only when they clearly reduce work
+- keep GitHub as the durable system spine
+- keep the current Do lane as the main execution lane
+- use Google Workspace as the preferred live operations lane when it clearly adds leverage
 - avoid parallel-system sprawl until the main implementation path is stable

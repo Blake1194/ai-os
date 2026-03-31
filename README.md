@@ -41,6 +41,9 @@ ai-os now includes the first-build execution package for the CLI-first assistant
 ## Resource Leverage
 ai-os now includes a resource-leverage layer for using current tools, browser lanes, integrations, and sessions deliberately. The repo and the current Do lane remain the core operating surfaces; optional systems should be adopted only when they clearly reduce work instead of adding coordination overhead.
 
+## Google-First Operations
+ai-os now includes a Google-first operations layer. GitHub remains the durable command, memory, and build spine, while Google Workspace becomes the preferred live operations lane for structured tracking, working documents, communication workflows later, and future Google-native automation when justified.
+
 ## Recovery Checkpoints
 The repository now includes a `/checkpoints/` folder with durable recovery snapshots so Atlas OS can be resumed quickly if chat context is lost or a browser session ends.
 
