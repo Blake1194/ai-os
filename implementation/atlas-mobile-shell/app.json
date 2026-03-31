@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "Atlas Mobile Shell",
+    "slug": "atlas-mobile-shell",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "platforms": ["android", "web"],
+    "assetBundlePatterns": ["**/*"]
+  }
+}
