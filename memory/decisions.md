@@ -48,3 +48,8 @@
 - The first tracker should be used for live structured operational review, not as a replacement for repo tasks or memory.
 - GitHub remains the durable system spine and source of truth for notes, tasks, logs, decisions, checkpoints, and implementation planning.
 - Any row that becomes durable should be promoted back into the repo as a note, task, log, decision, or checkpoint instead of remaining authoritative in Sheets.
+
+## Google Live Ops Validation Decision
+- Google Sheets is now validated for live structured tracking of real Atlas OS work.
+- GitHub remains the durable source of truth for any promoted outcome from the live tracker.
+- The live tracker should be used for short operational items, not as a second authority for tasks, memory, or implementation planning.

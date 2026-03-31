@@ -93,3 +93,9 @@ This task implements the first boundary of the CLI-first MVP by turning “simpl
 
 ## Next Best Action
 Create the first concrete `request_intake_entrypoint` implementation file using the chosen runtime/toolchain when approved.
+
+## Live Ops Promoted Outcome
+- The next smallest real code-facing action for this task is to create the first concrete `request_intake_entrypoint` implementation file when runtime/toolchain approval exists.
+- That first code-facing pass should stay limited to raw request validation, whitespace trimming, `mode` defaulting to `auto`, supported-mode validation, and safe invalid-result handling.
+- The first code-facing pass should not add routing, file writes, logging, or external calls.
+- The implementation contract remains `implementation/local-assistant-cli/src/request_intake_entrypoint.md`.

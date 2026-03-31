@@ -112,3 +112,9 @@ Atlas OS is now **ready to begin implementation planning/build execution** for t
 - the tabs `Live Tracker` and `Archive` now exist as the first live tracker surface
 - the row `OPS-001` was used for a controlled manual writeback test into `logs/session-log-018.md`
 - the Google live-ops lane is now operational for lightweight structured tracking plus small durable repo writeback
+
+## Google Live Operations Real Cycle Update
+- the live tracker has now been used for one real implementation-path item
+- row `OPS-002` tracked the next `request_intake_entrypoint` action through `new`, `active`, and `done`
+- the durable promoted outcome was written into `tasks/task-004-cli-intake-layer.md`
+- Google Sheets is now validated for live structured tracking of real work while GitHub remains the durable source of truth
