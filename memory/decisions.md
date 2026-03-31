@@ -79,3 +79,10 @@
 - No code refinement was needed during this validation pass.
 - The next prep artifact is `implementation/local-assistant-cli/src/routing_entrypoint.prep.md`.
 - Routing code should remain the next implementation step only within the same narrow first-pass boundary.
+
+## ChatGPT Controlled Relay Decision
+- ChatGPT-thread interaction is allowed only as a controlled browser relay surface.
+- The current ChatGPT thread may be treated as a readable browser page and controllable draft box, but not as an autonomous conversation target.
+- ChatGPT relay mode remains draft-only unless explicit send authorization is given.
+- GitHub remains the durable system spine; ChatGPT relay mode does not replace repo memory, checkpoints, or implementation state.
+- Controlled relay mode must not alter prior messages, settings, or profile/account areas.

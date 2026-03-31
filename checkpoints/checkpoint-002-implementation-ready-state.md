@@ -136,3 +136,9 @@ Atlas OS is now **ready to continue implementation planning/build execution** fo
 - the validation record exists at `implementation/local-assistant-cli/src/request_intake_entrypoint.validation.md`
 - no code refinement was needed in the validation pass
 - `implementation/local-assistant-cli/src/routing_entrypoint.prep.md` now exists as the next narrow prep artifact
+
+## ChatGPT Controlled Relay Update
+- controlled ChatGPT relay mode is now defined in `workflows/chatgpt-controlled-relay-mode.md`
+- ChatGPT-thread interaction is allowed only as a controlled browser relay surface
+- the mode remains draft-only unless explicit send authorization is given
+- this mode is intended to support clipboard-style collaboration without creating uncontrolled browser loops
