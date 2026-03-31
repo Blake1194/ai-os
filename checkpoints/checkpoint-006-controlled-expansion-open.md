@@ -46,3 +46,12 @@
 7. read `implementation/mobile-shell-bootstrap-report-002.md`
 8. read `implementation/mobile-shell-runtime-smoke-report-001.md`
 9. continue from the current top-priority next package unless a credential wall or destructive approval need appears
+
+## Future Planned Expansion Directions
+- future Atlas packages should include a local full-computer runtime, bounded worker-agent orchestration, voice, explicit capability gates, and selected integrations
+- these future directions are now recorded in:
+  - `implementation/system-access-and-multi-agent-plan-001.md`
+  - `implementation/consent-override-and-capability-model-001.md`
+  - `implementation/integration-priority-stack-001.md`
+  - `implementation/post-stable-shopify-sequence-001.md`
+- these are recorded as direction packages, not as a replacement for the current top-priority interactive runtime package
