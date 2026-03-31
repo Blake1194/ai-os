@@ -53,3 +53,11 @@
 - Google Sheets is now validated for live structured tracking of real Atlas OS work.
 - GitHub remains the durable source of truth for any promoted outcome from the live tracker.
 - The live tracker should be used for short operational items, not as a second authority for tasks, memory, or implementation planning.
+
+## Atlassian Decision
+- Atlassian is optional for Atlas OS and must not replace GitHub as the system spine.
+- GitHub remains the command, memory, checkpoint, and implementation source of truth.
+- Google Workspace remains the preferred live operations lane.
+- Jira may be used later as a narrow execution layer only if it clearly reduces operational friction.
+- Do not adopt Bitbucket, Trello, Confluence, Rovo, or broad Atlassian rollout at this stage.
+- Any Atlassian use must stay subordinate to the existing GitHub-first operating model.

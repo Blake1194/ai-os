@@ -27,3 +27,10 @@ The task file now records the smallest real code-facing next action for the requ
 
 ## Next Best Action
 Begin the first concrete `request_intake_entrypoint` implementation file when runtime/toolchain approval exists.
+
+## Atlassian Note
+- evaluated Atlassian fit for Atlas OS
+- conclusion: Jira-only optional later
+- no external setup approved
+- GitHub remains durable truth
+- Google remains live ops lane
