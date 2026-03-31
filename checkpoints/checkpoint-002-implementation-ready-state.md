@@ -26,6 +26,7 @@ The repo now contains:
 - the implementation-start specification layer for the request-intake entrypoint
 - the implementation-start specification layer for the routing entrypoint
 - routing fixtures for safe first-pass testing
+- a resource-leverage layer for current tools, integrations, sessions, and browser lanes
 
 ## What Remains
 Implementation execution has not started yet.
@@ -49,6 +50,12 @@ Its responsibility is to accept a raw request, normalize it into the MVP request
 7. complete `task-006-memory-write-read.md`
 8. complete `task-007-logging-and-reporting.md`
 9. follow `implementation/first-build-runbook.md`
+
+## Resource Leverage Update
+- the GitHub repo and the current Do lane remain the core operating surfaces
+- background mode and the browser environment should support the main path, not multiply lanes
+- Google Sheets is available but should stay optional until structured tracking clearly adds leverage
+- additional Do lanes should be avoided unless clearly justified
 
 ## Current Safe State
 The project is still inside safe repo-only planning/readiness work.
@@ -78,6 +85,7 @@ If resuming later:
 - the first actual implementation piece is now defined
 - the intake implementation-start specification layer is now defined
 - the routing implementation-start specification layer is now defined
+- the resource-leverage layer is now defined
 - the system is ready for the first actual implementation file once approved
 
 ## Ready State Declaration

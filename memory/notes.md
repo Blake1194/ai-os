@@ -44,6 +44,11 @@ The system can now:
 - Build tasks, contracts, validation guidance, storage rules, and implementation structure now exist.
 - The system is ready to begin the first build-oriented implementation task with minimal ambiguity.
 
+## Resource Leverage Layer
+- Atlas OS now has a resource-leverage layer in `/projects/do-resource-leverage-plan.md`, `/profile/active-tooling-and-integrations.md`, and `/commands/resource-leverage-commands.md`.
+- The current Do lane, GitHub repo, browser environment, and background mode should be used as the main operating stack.
+- Google Sheets and additional Do lanes should stay optional until they clearly reduce work instead of multiplying coordination.
+
 ## Recovery / Resume Support
 - Atlas OS now has an explicit recovery checkpoint system in `/checkpoints/`.
 - This makes it easier to resume safely after context loss, browser interruption, or assistant handoff.

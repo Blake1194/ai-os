@@ -30,3 +30,9 @@
 - The MVP should use explicit interface/contracts before broader runtime complexity is added.
 - The repo remains the durable state layer for notes, tasks, logs, checkpoints, small code, and small fixtures.
 - Large media, bulky exports, and future runtime caches should stay out of the normal repo path.
+
+## Resource Leverage Decisions
+- Atlas OS should maximize already-available resources carefully, but avoid multi-lane sprawl until the main implementation path is stable.
+- The GitHub repo and the current Do lane remain the core operating surfaces.
+- Google Sheets should be used only for clearly structured tracking that adds real leverage over markdown.
+- A second Do lane should be treated as optional and justified only when it reduces confusion instead of increasing it.
