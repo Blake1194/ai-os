@@ -25,3 +25,14 @@ jobs:
 
       - name: Expo dependency check
         run: npx expo install --fix --check || true
+
+      - name: Expo start smoke
+        run: |
+          set +e
+          CI=1 timeout 45s npm run start -- --non-interactive
+          code=$?
+          if [ "$code" -eq 124 ]; then
+            echo "Expo start smoke timed out after successful launch window."
+            exit 0
+          fi
+          exit "$code"
