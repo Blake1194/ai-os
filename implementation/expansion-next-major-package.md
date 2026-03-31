@@ -1,20 +1,20 @@
 # Expansion Next Major Package
 
 ## Exact Goal
-- move from verified remote install/check success to the first live Atlas mobile shell runtime session
+- move from verified remote runtime-smoke success to the first interactive human-usable Atlas mobile shell session
 
 ## Exact Deliverable
-- one recorded `npm run start` result for `implementation/atlas-mobile-shell/` inside a Node/npm-capable environment already synced with the current repo state
+- one recorded live Expo session output or dev URL for `implementation/atlas-mobile-shell/` from an interactive Node/npm-capable environment synced to the current repo state
 
 ## Why It Is The Highest-Leverage Move
 - the mobile shell files are now in GitHub
 - the repo-level devcontainer and workflow support are now in GitHub
 - a GitHub Codespace was launched successfully
-- a remote GitHub Actions workflow already proved that dependency installation and Expo dependency checking succeed in a real remote Node environment
-- the biggest remaining gap is no longer installation readiness; it is the first live runtime session
+- remote GitHub Actions already proved that dependency installation, Expo dependency checking, and a bounded Expo start smoke all succeed in a real remote Node environment
+- the biggest remaining gap is no longer whether the runtime can start; it is capturing a live interactive session that a human can actually use
 
 ## What It Unlocks
-- first live product-shell execution
+- first human-usable product-shell session
 - stronger confidence in the mobile shell lane
 - a concrete baseline for Android/mobile follow-on work
 - a clearer runtime target for later automation and relay work
@@ -26,5 +26,5 @@
 - credentialed integrations by itself
 
 ## Whether It Can Begin Immediately Or Requires Manual Credential Approval First
-- it can begin immediately inside the launched Codespace or any other Node/npm-capable environment with the synced repo state
+- it can begin immediately inside the launched Codespace or any other interactive Node/npm-capable environment with the synced repo state
 - if the next shell access path requires a fresh login or billing confirmation, stop there and record the exact blocker
