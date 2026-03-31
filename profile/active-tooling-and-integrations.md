@@ -49,3 +49,8 @@
 - keep the current Do lane as the main execution lane
 - use Google Workspace as the preferred live operations lane when it clearly adds leverage
 - avoid parallel-system sprawl until the main implementation path is stable
+
+### First Google Operational Surface
+- role: lightweight live structured tracker in Google Sheets
+- status: preferred first Google surface
+- the first Google operational surface should be a lightweight Google Sheets tracker

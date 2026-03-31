@@ -64,3 +64,15 @@ Atlas OS should remain GitHub-centered for system memory and implementation plan
 - moving checkpoints, decisions, or implementation contracts out of GitHub
 - using too many Google surfaces at once before the main implementation path stabilizes
 - activating Apps Script before a real automation loop is ready
+
+## First Operational Surface
+The first practical Google operational surface should be a **lightweight Google Sheets live tracker**.
+
+Use it for:
+- compact live status tracking
+- short operational rows
+- next-action review
+- promotion signals that tell Atlas when a row should become a repo note, task, log, decision, or checkpoint
+
+Do not use it as a second memory system.
+GitHub remains the durable system spine.
