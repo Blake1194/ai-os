@@ -1,51 +1,45 @@
 # ChatGPT Controlled Relay Mode
 
 ## Purpose
-Define how Atlas OS may use an open ChatGPT browser thread as a controlled relay surface without turning ChatGPT into an autonomous backend, uncontrolled loop, or separate system of record.
+Define how Atlas OS may use the current approved ChatGPT browser thread as a controlled relay surface without turning ChatGPT into an autonomous backend, uncontrolled loop, or separate system of record.
+
+## Scope
+This mode applies to the active ChatGPT continuation thread recorded in `operator/chatgpt-thread-registry.md`.
+
+If a later migration changes the active continuation thread, the registry and matching migration file become the durable authority rather than the old thread alone.
 
 ## Allowed Actions
 In controlled relay mode, Do may:
-- switch to the current approved ChatGPT thread tab
+- switch to the active continuation thread tab
 - read the latest visible assistant message if needed
 - identify and focus the message input area
 - type or paste a draft message into the input area
-- leave the draft unsent by default
-- clear draft text if instructed or if a safe cleanup step is needed
-- report what draft is prepared and whether the box is ready
+- leave the draft unsent by default unless sending is explicitly authorized
+- clear an unsent draft if instructed or if safe cleanup is requested
+- confirm whether the composer is empty, focused, and ready
+- report the current relay state back into the repo lane
+- migrate active continuation to a new ChatGPT thread when needed, so long as the migration is durably recorded in the repo
 
 ## Forbidden Actions
 Do must not:
-- press Send unless an instruction explicitly says `SEND NOW`
+- press Send unless an instruction explicitly authorizes sending or relay continuation requires a clearly approved handoff action
 - alter prior messages
 - change ChatGPT settings
-- open account, profile, personalization, or billing areas
-- start loops, self-chat behavior, or autonomous conversation patterns
+- open account, profile, personalization, or billing areas without need
+- start loops, self-chat behavior, or uncontrolled autonomous conversation patterns
 - treat ChatGPT as a backend integration or system API
 - overwrite human-written draft text without instruction
+- move outside the active continuation thread boundary without recording the migration in repo state
 
 ## Send Authorization Rule
-No message may be sent from ChatGPT relay mode unless the user gives explicit send authorization.
+No message should be sent from ChatGPT relay mode unless sending is clearly part of the approved continuation behavior or explicitly authorized.
 
-The authorization must be clear and specific, such as:
-- `SEND NOW`
-- `send the draft now`
-- `submit this message`
+## Repo Anchors
+The reusable relay command layer lives at:
+- `commands/chatgpt-relay-commands.md`
+- `profile/chatgpt-relay-preferences.md`
+- `operator/chatgpt-thread-registry.md`
 
-Absent that explicit authorization, the draft must remain unsent.
-
-## Draft-Only Safety Rule
-Controlled relay mode is draft-only by default.
-
-That means:
-- prepare drafts only
-- verify the draft content if requested
-- stop before send
-- clear drafts only when instructed or when safe cleanup is explicitly part of the task
-
-## How This Supports Atlas OS Safely
-This mode supports Atlas OS by:
-- allowing ChatGPT browser-thread interaction as a controlled relay surface
-- preserving GitHub as the durable system spine
-- avoiding uncontrolled browser loops or self-messaging patterns
-- keeping human authorization in the send step
-- allowing later clipboard-style collaboration without turning ChatGPT into an unmanaged automation lane
+Relay mode remains subordinate to:
+- GitHub as the durable system spine
+- repo checkpoints, logs, and decisions as the durable operating record
