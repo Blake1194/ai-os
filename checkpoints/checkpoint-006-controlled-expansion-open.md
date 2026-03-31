@@ -20,14 +20,15 @@
 - irreversible risky actions remain blocked unless recorded, justified, and explicitly approved
 
 ## What The Current Top-Priority Next Package Is
-- enter the launched Codespace or another synced Node/npm-capable environment and record the first live `npm run start` result for `implementation/atlas-mobile-shell/`
+- enter the launched Codespace or another synced interactive Node/npm-capable environment and capture the first human-usable live Expo session output or dev URL for `implementation/atlas-mobile-shell/`
 
 ## Current Concrete Expansion State
 - the Atlas mobile shell now exists in GitHub and in the local workspace
 - repo-level cloud-dev support now exists in GitHub (`.devcontainer`, workflow, Gitpod config)
 - a GitHub Codespace has been launched successfully
-- the `atlas-mobile-shell-smoke` GitHub Actions workflow completed successfully, including dependency installation and Expo dependency check
-- the remaining blocker from this shell is not install readiness; it is unreliable direct automation into the live `github.dev` editor/runtime surface
+- the `atlas-mobile-shell-smoke` workflow completed successfully once for install/check validation and once for runtime smoke validation
+- the second run successfully reached a bounded Expo start smoke window
+- the remaining blocker from this shell is not install readiness or basic runtime launchability; it is unreliable direct automation into the live `github.dev` editor/runtime surface
 
 ## Active ChatGPT Continuation Thread
 - active thread: `Atlas OS Build Plan`
@@ -43,4 +44,5 @@
 5. read `implementation/expansion-next-major-package.md`
 6. read `implementation/mobile-shell-bootstrap-report-001.md`
 7. read `implementation/mobile-shell-bootstrap-report-002.md`
-8. continue from the current top-priority next package unless a credential wall or destructive approval need appears
+8. read `implementation/mobile-shell-runtime-smoke-report-001.md`
+9. continue from the current top-priority next package unless a credential wall or destructive approval need appears
