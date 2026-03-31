@@ -28,6 +28,7 @@ The repo now contains:
 - routing fixtures for safe first-pass testing
 - a resource-leverage layer for current tools, integrations, sessions, and browser lanes
 - a Google-first operations layer for live operational use of Google Workspace
+- a Google Sheets tracker specification layer for the first live structured tracking surface
 
 ## What Remains
 Implementation execution has not started yet.
@@ -98,3 +99,10 @@ If resuming later:
 
 ## Ready State Declaration
 Atlas OS is now **ready to begin implementation planning/build execution** for the CLI-first local assistant MVP with minimal ambiguity.
+
+## Google Tracker Update
+- the first Google operational surface should be a lightweight Google Sheets live tracker
+- the first tracker should hold only active structured operational rows
+- GitHub remains the durable source of truth for notes, tasks, logs, decisions, checkpoints, and implementation/build artifacts
+- the tracker should trigger repo writeback when a row becomes durable or resume-critical
+- the Google Sheets tracker specification layer is now defined

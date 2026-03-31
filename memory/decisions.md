@@ -42,3 +42,9 @@
 - Google Workspace should become the preferred live operations lane.
 - Browser + Google + GitHub is the preferred near-term operating stack.
 - Future integrations should favor simplicity and continuity over scattered tool expansion.
+
+## Google Sheets Tracker Decisions
+- The first Google operational surface should be a lightweight Google Sheets tracker.
+- The first tracker should be used for live structured operational review, not as a replacement for repo tasks or memory.
+- GitHub remains the durable system spine and source of truth for notes, tasks, logs, decisions, checkpoints, and implementation planning.
+- Any row that becomes durable should be promoted back into the repo as a note, task, log, decision, or checkpoint instead of remaining authoritative in Sheets.

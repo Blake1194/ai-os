@@ -58,3 +58,9 @@ The system can now:
 ## Recovery / Resume Support
 - Atlas OS now has an explicit recovery checkpoint system in `/checkpoints/`.
 - This makes it easier to resume safely after context loss, browser interruption, or assistant handoff.
+
+## Google Sheets Tracker Layer
+- Atlas OS now has a first concrete Google Sheets structured-tracking layer in `/projects/google-sheets-tracker-spec.md`, `/implementation/google-operations-tracker-schema.md`, and `/commands/google-sheets-tracker-commands.md`.
+- The first Google operational surface should be a lightweight live operations tracker rather than a broad Google system rollout.
+- GitHub remains the durable source of truth for notes, tasks, logs, decisions, checkpoints, and implementation artifacts.
+- Google Sheets should hold only compact live operational rows and should write durable outcomes back into GitHub when they matter.
