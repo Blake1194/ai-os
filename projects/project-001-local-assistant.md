@@ -21,10 +21,10 @@ A staged assistant system with versioned milestones, clear scope, reusable archi
 This project gives Atlas OS a clear path toward a real personal assistant layer instead of remaining only a repository and workflow framework.
 
 ## Current Status
-Active — the intake and routing implementation-start specification layers now exist under the implementation source layer.
+Active — the intake and routing implementation-start specification layers exist, and the first actual code artifact now exists for the intake path.
 
 ## Current Phase
-Implementation start package complete; intake and routing entrypoint specifications defined
+First code artifact started; intake entrypoint implemented in a narrow first-pass form
 
 ## Core Tools Involved
 - ChatGPT
@@ -113,7 +113,7 @@ Implementation start package complete; intake and routing entrypoint specificati
 - first actual implementation piece defined: complete
 - intake implementation-start specification layer: complete
 - routing implementation-start specification layer: complete
-- first actual implementation file: next
+- first actual implementation file: started (request_intake_entrypoint.js created)
 
 ## Success Criteria
 - the assistant effort is tracked as a project
@@ -129,13 +129,19 @@ Implementation start package complete; intake and routing entrypoint specificati
 - how much memory should remain repo-based vs local-state-based in later versions
 
 ## Explicit Next Milestone
-Create the first actual `request_intake_entrypoint` implementation file under `/implementation/local-assistant-cli/src/`.
+Validate the first-pass `request_intake_entrypoint.js` behavior and then begin the `routing_entrypoint` implementation file within the same narrow boundary.
 
 ## Next Best Action
-Start the first concrete implementation file for the `request_intake_entrypoint` when approved, then follow with the `routing_entrypoint` implementation file.
+Validate the first-pass `request_intake_entrypoint.js` implementation against examples and fixtures, then follow with the `routing_entrypoint` implementation file when approved.
 
 ## Runtime / Toolchain Update
 - The minimal first runtime/toolchain decision is now defined in `implementation/runtime-toolchain-decision.md`.
 - The recommended first code-facing file is `implementation/local-assistant-cli/src/request_intake_entrypoint.js`.
 - No actual code execution or install has started yet.
 - The next approval gate is now narrowly defined: permit the first single-file Node.js + JavaScript implementation pass.
+
+## First Code Artifact Update
+- The first actual code artifact is now `implementation/local-assistant-cli/src/request_intake_entrypoint.js`.
+- The first-pass example set now exists in `implementation/local-assistant-cli/src/request_intake_entrypoint.examples.md`.
+- A Codex-ready handoff now exists in `implementation/codex-handoff.md`.
+- Codex should only be used later inside the current first-pass boundary rather than as a reason to expand scope.

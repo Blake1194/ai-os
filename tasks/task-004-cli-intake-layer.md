@@ -19,7 +19,7 @@ Mixed:
 - MVP build planning
 
 ## Current Status
-The first request-intake module definition and implementation-start specification layer now exist under the implementation layer. The task is ready for the first concrete implementation file.
+The first request-intake module definition and implementation-start specification layer now exist under the implementation layer, and the first concrete implementation file now exists in a narrow first-pass form.
 
 ## Scope
 - define the expected command/request input shape
@@ -92,7 +92,7 @@ This task implements the first boundary of the CLI-first MVP by turning “simpl
 - the goal is a stable front door, not a full assistant loop
 
 ## Next Best Action
-Create the first concrete `request_intake_entrypoint` implementation file using the chosen runtime/toolchain when approved.
+Validate the first-pass `request_intake_entrypoint.js` behavior against the documented examples and keep the boundary narrow before moving to the routing implementation file.
 
 ## Live Ops Promoted Outcome
 - The next smallest real code-facing action for this task is to create the first concrete `request_intake_entrypoint` implementation file when runtime/toolchain approval exists.
@@ -105,3 +105,9 @@ Create the first concrete `request_intake_entrypoint` implementation file using 
 - The recommended first path is plain Node.js + JavaScript with no framework, no TypeScript, and no external dependencies for the first file.
 - The exact first code-facing file is defined in `implementation/first-code-file-spec.md`.
 - No install or execution has started yet; this only reduces ambiguity for the next approval gate.
+
+## First Code Artifact Started
+- `implementation/local-assistant-cli/src/request_intake_entrypoint.js` now exists as the first real code-facing implementation file.
+- `implementation/local-assistant-cli/src/request_intake_entrypoint.examples.md` now exists as the first example/output reference set for this file.
+- The first pass stays limited to request normalization and structured refusal behavior only.
+- Routing, file writes, logging, external calls, and broader tooling expansion remain deferred.

@@ -67,3 +67,9 @@
 - The first real code-facing implementation file should be `implementation/local-assistant-cli/src/request_intake_entrypoint.js`.
 - No actual code execution or install starts yet; this decision only defines the next approval gate clearly.
 - TypeScript, frameworks, bundlers, external dependencies, and broader tooling should remain deferred until the first narrow code pass proves they are needed.
+
+## First Code Artifact / Codex Decision
+- The first actual code artifact is now started at `implementation/local-assistant-cli/src/request_intake_entrypoint.js`.
+- The first code pass must remain limited to request normalization and structured refusal behavior.
+- Codex should only be used later within the existing first-pass boundary and must not expand scope, tooling, or architecture prematurely.
+- The existence of the first code file does not authorize installs, runtime expansion, or broader implementation behavior beyond the defined boundary.

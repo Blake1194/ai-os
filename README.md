@@ -64,3 +64,6 @@ ai-os now includes the first concrete Google Sheets structured-tracking layer fo
 
 ## Runtime / Toolchain Decision
 ai-os now includes the minimal runtime/toolchain decision layer for the first concrete CLI-first assistant implementation step. The recommended first path is plain Node.js + JavaScript, and the first recommended code-facing file is `implementation/local-assistant-cli/src/request_intake_entrypoint.js`. This defines the next approval gate without starting installs or code execution.
+
+## First Code Artifact
+ai-os now includes the first actual code-facing implementation file for the CLI-first local assistant MVP at `implementation/local-assistant-cli/src/request_intake_entrypoint.js`. The first example/output reference file and Codex handoff package now also exist, while scope remains tightly limited to the approved first-pass boundary.
