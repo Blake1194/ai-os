@@ -1,0 +1,22 @@
+{
+  "name": "Atlas OS",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "workspaceFolder": "/workspaces/ai-os",
+  "postCreateCommand": "cd implementation/atlas-mobile-shell && ./scripts/bootstrap-mobile-shell.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "expo.vscode-expo-tools"
+      ]
+    }
+  },
+  "forwardPorts": [8081, 19000, 19001, 19002],
+  "portsAttributes": {
+    "8081": { "label": "Metro bundler" },
+    "19000": { "label": "Expo dev tools" },
+    "19001": { "label": "Expo tunnel" },
+    "19002": { "label": "Expo UI" }
+  }
+}
