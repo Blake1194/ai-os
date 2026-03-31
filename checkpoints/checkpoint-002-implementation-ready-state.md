@@ -24,13 +24,16 @@ The repo now contains:
 - the first actual implementation piece defined under the implementation layer
 - request-intake fixtures for safe first-pass testing
 - the implementation-start specification layer for the request-intake entrypoint
+- the implementation-start specification layer for the routing entrypoint
+- routing fixtures for safe first-pass testing
 
 ## What Remains
 Implementation execution has not started yet.
 What remains is the first real build pass:
 - create the first code-facing `request_intake_entrypoint` implementation file under `/implementation/local-assistant-cli/src/`
 - keep it limited to normalization and safe invalid-input handling
-- start the intake behavior in real implementation form before moving to routing, writes, or reporting
+- then create the first code-facing `routing_entrypoint` implementation file under `/implementation/local-assistant-cli/src/`
+- keep it limited to explicit classification and safe unsupported routing behavior
 
 ## First Implementation Action
 Create the first `request_intake_entrypoint` implementation file under `/implementation/local-assistant-cli/src/`.
@@ -41,9 +44,11 @@ Its responsibility is to accept a raw request, normalize it into the MVP request
 2. use `implementation/local-assistant-cli/src/request_intake_entrypoint.md` as the build contract
 3. create the first concrete `request_intake_entrypoint` implementation file
 4. complete `task-005-cli-routing-layer.md`
-5. complete `task-006-memory-write-read.md`
-6. complete `task-007-logging-and-reporting.md`
-7. follow `implementation/first-build-runbook.md`
+5. use `implementation/local-assistant-cli/src/routing_entrypoint.md` as the build contract
+6. create the first concrete `routing_entrypoint` implementation file
+7. complete `task-006-memory-write-read.md`
+8. complete `task-007-logging-and-reporting.md`
+9. follow `implementation/first-build-runbook.md`
 
 ## Current Safe State
 The project is still inside safe repo-only planning/readiness work.
@@ -60,8 +65,8 @@ If resuming later:
 3. read `implementation/first-build-step.md`
 4. read `implementation/first-build-runbook.md`
 5. read `implementation/local-assistant-cli/src/request_intake_entrypoint.md`
-6. read `implementation/local-assistant-cli/src/module-contracts.md`
-7. read `implementation/local-assistant-cli/src/implementation-notes.md`
+6. read `implementation/local-assistant-cli/src/routing_entrypoint.md`
+7. read `implementation/local-assistant-cli/src/module-contracts.md`
 8. begin the first actual implementation file when approved
 
 ## Readiness Update
@@ -71,7 +76,8 @@ If resuming later:
 - first build runbook now exists
 - execution checklist now exists
 - the first actual implementation piece is now defined
-- the implementation-start specification layer is now defined
+- the intake implementation-start specification layer is now defined
+- the routing implementation-start specification layer is now defined
 - the system is ready for the first actual implementation file once approved
 
 ## Ready State Declaration

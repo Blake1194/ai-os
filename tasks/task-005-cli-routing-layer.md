@@ -19,7 +19,7 @@ Mixed:
 - MVP build planning
 
 ## Current Status
-Created as a concrete implementation-preparation task.
+The first routing implementation-preparation layer now exists under the implementation source layer and the task is ready for the first concrete routing implementation file after intake implementation begins.
 
 ## Scope
 - define first-pass classifications
@@ -43,6 +43,11 @@ Created as a concrete implementation-preparation task.
 - `tasks/task-004-cli-intake-layer.md`
 - `projects/local-assistant-interface-contracts.md`
 - `projects/local-assistant-mvp-spec.md`
+
+## Related Implementation Files
+- `implementation/local-assistant-cli/src/routing_entrypoint.md`
+- `implementation/local-assistant-cli/src/module-contracts.md`
+- `implementation/local-assistant-cli/tests/fixtures/routing-fixtures.md`
 
 ## Success Criteria
 - supported classifications are fixed
@@ -83,4 +88,4 @@ This task turns “command routing” from the MVP spec into a concrete, testabl
 - the output must be predictable enough for memory and reporting layers to trust
 
 ## Next Best Action
-Begin `task-006-memory-write-read.md` after the routing map is fixed.
+Create the first concrete `routing_entrypoint` implementation file after the request-intake implementation file exists.

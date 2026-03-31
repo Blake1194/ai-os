@@ -21,10 +21,10 @@ A staged assistant system with versioned milestones, clear scope, reusable archi
 This project gives Atlas OS a clear path toward a real personal assistant layer instead of remaining only a repository and workflow framework.
 
 ## Current Status
-Active — the first actual implementation piece and its implementation-start specification layer now exist under the implementation layer.
+Active — the intake and routing implementation-start specification layers now exist under the implementation source layer.
 
 ## Current Phase
-Implementation start package complete; request-intake entrypoint specification defined
+Implementation start package complete; intake and routing entrypoint specifications defined
 
 ## Core Tools Involved
 - ChatGPT
@@ -62,11 +62,13 @@ Implementation start package complete; request-intake entrypoint specification d
 - `implementation/local-assistant-cli/src/README.md`
 - `implementation/local-assistant-cli/src/request-intake/README.md`
 - `implementation/local-assistant-cli/src/request_intake_entrypoint.md`
+- `implementation/local-assistant-cli/src/routing_entrypoint.md`
 - `implementation/local-assistant-cli/src/module-contracts.md`
 - `implementation/local-assistant-cli/src/implementation-notes.md`
 - `implementation/local-assistant-cli/tests/README.md`
 - `implementation/local-assistant-cli/tests/fixtures/README.md`
 - `implementation/local-assistant-cli/tests/fixtures/request-intake-fixtures.md`
+- `implementation/local-assistant-cli/tests/fixtures/routing-fixtures.md`
 - `implementation/local-assistant-cli/docs/README.md`
 
 ## Linked Workflows
@@ -95,10 +97,11 @@ Implementation start package complete; request-intake entrypoint specification d
 5. prepare the implementation layer structure
 6. create the implementation-preparation task set for intake, routing, memory, and reporting
 7. define the first actual implementation piece under the implementation layer
-8. define the implementation-start specification layer for that first piece
-9. begin the first actual implementation file
-10. test assistant-oriented task routing in live use
-11. add more local-first components later
+8. define the implementation-start specification layer for intake
+9. define the implementation-start specification layer for routing
+10. begin the first actual implementation file
+11. test assistant-oriented task routing in live use
+12. add more local-first components later
 
 ## Current Milestone Status
 - blueprint and project scope: complete
@@ -108,7 +111,8 @@ Implementation start package complete; request-intake entrypoint specification d
 - implementation layer structure: complete
 - implementation-preparation task set created: complete
 - first actual implementation piece defined: complete
-- implementation-start specification layer: complete
+- intake implementation-start specification layer: complete
+- routing implementation-start specification layer: complete
 - first actual implementation file: next
 
 ## Success Criteria
@@ -128,4 +132,4 @@ Implementation start package complete; request-intake entrypoint specification d
 Create the first actual `request_intake_entrypoint` implementation file under `/implementation/local-assistant-cli/src/`.
 
 ## Next Best Action
-Start the first concrete implementation file for the request-intake entrypoint when approved.
+Start the first concrete implementation file for the `request_intake_entrypoint` when approved, then follow with the `routing_entrypoint` implementation file.
