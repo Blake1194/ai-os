@@ -118,3 +118,9 @@ Atlas OS is now **ready to begin implementation planning/build execution** for t
 - row `OPS-002` tracked the next `request_intake_entrypoint` action through `new`, `active`, and `done`
 - the durable promoted outcome was written into `tasks/task-004-cli-intake-layer.md`
 - Google Sheets is now validated for live structured tracking of real work while GitHub remains the durable source of truth
+
+## Runtime / Toolchain Decision Update
+- the first runtime/toolchain choice is now defined as plain Node.js + JavaScript
+- the first recommended code file is `implementation/local-assistant-cli/src/request_intake_entrypoint.js`
+- no code execution or install has started yet
+- the next approval gate is now limited to creating the first real code-facing file with a narrow safe scope

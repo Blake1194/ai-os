@@ -133,3 +133,9 @@ Create the first actual `request_intake_entrypoint` implementation file under `/
 
 ## Next Best Action
 Start the first concrete implementation file for the `request_intake_entrypoint` when approved, then follow with the `routing_entrypoint` implementation file.
+
+## Runtime / Toolchain Update
+- The minimal first runtime/toolchain decision is now defined in `implementation/runtime-toolchain-decision.md`.
+- The recommended first code-facing file is `implementation/local-assistant-cli/src/request_intake_entrypoint.js`.
+- No actual code execution or install has started yet.
+- The next approval gate is now narrowly defined: permit the first single-file Node.js + JavaScript implementation pass.

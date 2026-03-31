@@ -99,3 +99,9 @@ Create the first concrete `request_intake_entrypoint` implementation file using 
 - That first code-facing pass should stay limited to raw request validation, whitespace trimming, `mode` defaulting to `auto`, supported-mode validation, and safe invalid-result handling.
 - The first code-facing pass should not add routing, file writes, logging, or external calls.
 - The implementation contract remains `implementation/local-assistant-cli/src/request_intake_entrypoint.md`.
+
+## Runtime / Toolchain Gate
+- The smallest practical runtime/toolchain choice is now defined in `implementation/runtime-toolchain-decision.md`.
+- The recommended first path is plain Node.js + JavaScript with no framework, no TypeScript, and no external dependencies for the first file.
+- The exact first code-facing file is defined in `implementation/first-code-file-spec.md`.
+- No install or execution has started yet; this only reduces ambiguity for the next approval gate.

@@ -61,3 +61,6 @@ Atlas OS has now run its first real live task instance by defining the daily ope
 
 ## Google Sheets Tracker
 ai-os now includes the first concrete Google Sheets structured-tracking layer for Atlas OS. The first Google operational surface is a lightweight live operations tracker that keeps row-based status review in Sheets while GitHub remains the durable source of truth for system memory, tasks, logs, decisions, checkpoints, and implementation artifacts.
+
+## Runtime / Toolchain Decision
+ai-os now includes the minimal runtime/toolchain decision layer for the first concrete CLI-first assistant implementation step. The recommended first path is plain Node.js + JavaScript, and the first recommended code-facing file is `implementation/local-assistant-cli/src/request_intake_entrypoint.js`. This defines the next approval gate without starting installs or code execution.

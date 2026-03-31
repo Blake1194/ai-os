@@ -32,3 +32,8 @@ A safe first test passes if:
 ## What Completion of This First Step Proves
 Completing this step proves that the assistant has a stable front door.
 It confirms that real implementation can start without yet touching routing, file writes, or logging behavior.
+
+## Runtime / Toolchain Lock
+- The minimal first runtime/toolchain choice is plain Node.js + JavaScript.
+- The first concrete code-facing file should be `implementation/local-assistant-cli/src/request_intake_entrypoint.js`.
+- The first code pass should stay single-file, dependency-light, and limited to intake normalization plus safe invalid-input handling.

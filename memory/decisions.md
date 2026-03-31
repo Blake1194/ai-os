@@ -61,3 +61,9 @@
 - Jira may be used later as a narrow execution layer only if it clearly reduces operational friction.
 - Do not adopt Bitbucket, Trello, Confluence, Rovo, or broad Atlassian rollout at this stage.
 - Any Atlassian use must stay subordinate to the existing GitHub-first operating model.
+
+## Runtime / Toolchain Decision
+- The first runtime/toolchain choice is plain Node.js + JavaScript.
+- The first real code-facing implementation file should be `implementation/local-assistant-cli/src/request_intake_entrypoint.js`.
+- No actual code execution or install starts yet; this decision only defines the next approval gate clearly.
+- TypeScript, frameworks, bundlers, external dependencies, and broader tooling should remain deferred until the first narrow code pass proves they are needed.
